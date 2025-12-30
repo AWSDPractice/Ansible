@@ -1,0 +1,6 @@
+- name: PLAY1
+  hosts:
+  become:
+  tasks:
+  - name:
+    
