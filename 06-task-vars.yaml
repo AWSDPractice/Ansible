@@ -7,7 +7,7 @@
     TRAINER: shivakumar
   tasks: 
   - name: print the variables
-    vars: #task level variables
+    vars: #task level variables , accesaible with in the task, task variables can override play level variables
       COURSE: ansible
     ansible.builtin.debug:
       msg: "course is {{ COURSE }}, duration is {{ DURATION }}, trainer is {{ TRAINER }}"
