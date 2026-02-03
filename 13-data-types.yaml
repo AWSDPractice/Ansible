@@ -1,0 +1,23 @@
+#Think of a string like a sentence written in a notebook 
+#Each letter is a character, and together they form a string.
+
+- name: DevOps course information
+  host: local
+  connection: local
+  vars:
+    course_name: "DevOps with aws"    #string
+    duration: 3months
+    topics: #list
+    - linux
+    - shell
+    - ansible
+    - aws
+    live: true #boolean
+    tools: #map
+      ci: jenkins
+      cloud: aws
+      containerization: docker
+  tasks:
+  - name: print course information
+    ansible.builtin.debug:
+      msg: " Hi all i am getting trained in {{course_name}}, Duration is {{duration}}, topics are {{topics}}, is it live {{live}}, using tools are {{tools}}"
