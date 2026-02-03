@@ -1,8 +1,5 @@
-#Think of a string like a sentence written in a notebook 
-#Each letter is a character, and together they form a string.
-
 - name: DevOps course information
-  host: local
+  hosts: local
   connection: local
   vars:
     course_name: "DevOps with aws"    #string
@@ -20,4 +17,9 @@
   tasks:
   - name: print course information
     ansible.builtin.debug:
-      msg: " Hi all i am getting trained in {{course_name}}, Duration is {{duration}}, topics are {{topics}}, is it live {{live}}, using tools are {{tools}}"
+      msg: "Hi all i am getting trained in {{course_name}}, Duration is {{duration}}, topics are {{topics}}, is it live {{live}}, using tools are {{tools}}"
+
+
+
+#Think of a string like a sentence written in a notebook 
+#Each letter is a character, and together they form a string.
