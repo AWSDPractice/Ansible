@@ -44,3 +44,9 @@
       name: "vineela kommoju"
     ansible.builtin.debug:
        msg: "Hello {{ name | upper }}"
+
+  - name: convert max to min
+    vars:
+      numbers: [ 1, 5,7,555,62745,2,3]
+    ansible.builtin.debug:
+       msg: "Min is: {{ numbers | min }}, max is {{ numbers | max }}"
