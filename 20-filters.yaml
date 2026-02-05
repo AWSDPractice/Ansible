@@ -10,6 +10,6 @@
     vars:
       fruits: apple,banana,orange,watermelon,pomogranate,papaya,grapes,sapota
     ansible.builtin.debug:
-      msg: "fruits list is  {{ fruits | split ()'.')}}
+      msg: "fruits list is  {{ fruits | split ('.')}}
 
   
