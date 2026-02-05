@@ -38,3 +38,9 @@
       name: "ANUHYAVAMSI"
     ansible.builtin.debug:
        msg: "Hello {{ name | lower }}"
+
+  - name: convert lower to upper
+    vars:
+      name: "vineela kommoju"
+    ansible.builtin.debug:
+       msg: "Hello {{ name | upper }}"
